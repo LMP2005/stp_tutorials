@@ -24,3 +24,34 @@ written in more than one line,
 this saves time using # at start of each line. 
 """
 # as long as a string is not assigned a variable, python will read the code but ignore it
+
+# Python variables
+x = 5
+y = "John"
+print(x)
+print(y)
+
+x = 4 # x is of type integer
+x = "Sally" # x is now of type string
+print(x)
+
+x = str(3) # x will be '3'
+y = int(3) # y will be 3
+z = float(3) # z will be 3.0
+
+# get the data type by using type() function.
+x = 5
+y = "John"
+print(type(x))
+print(type(y))
+
+# ' and " are same
+# case sensitive variable names, a = 4 A = "Sally" are different variable names.
+
+#variable names. Must not start with number and are case sensitive for example.
+myvar = "John"
+my_var = "John"
+_my_var = "John"
+myVar = "John"
+MYVAR = "John"
+myvar2 = "John"
