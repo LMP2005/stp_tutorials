@@ -73,3 +73,75 @@ print(x)
 print(y)
 print(z)
 
+# output variables
+x = "python is awesome"
+print(x)
+# can use print() to output multiple variables seperated by a comma or a + sign. Although comma is better as it supports different data types.
+# remember to include a space after python and is otherwise the 3 words would be pythonisawesome.
+x = "python "
+y = "is "
+z = "awesome"
+print(x, y, z)
+
+# + sign also works as a mathematical operator. you cannot use it with a number and "" string.
+x = 5
+y = 10
+print(x+y)
+
+# Global variables are variables created outside of a function. Can be used inside the function.
+x = "awesome"
+def myfunc():
+    x = "fantastic"
+    print("Python is " +x)
+myfunc()
+# myfunc() will now print "Python is fantastic". Note indentation.
+
+print("Python is " + x)
+# the above will print "Python is awesome", as x = awesomme. X = fantastic is under def myfunc(). 
+
+# Data Types
+# type() function will tell you data type
+x = 5
+print(type(x))
+# data type is set when you assign a value to a variable
+# x = "hello world" is str
+# x = 20 is int
+# x = 20.5 is float
+# x = ["apple", "banana", "cherry"] is list
+# x = ("apple", "banana", "cherry"] is tuple
+# x = range (6) is range
+# x = {"name" : "John", "age" : 36} is dict
+# x = {"apple", "banana", "cherry:} is set
+
+# Setting specific data type
+x = str("hello world")
+print(x)
+y = int(20)
+print(y)
+z = float(20.5)
+print(z)
+
+# NUMBERS: numeric types
+x = 1 # int is a whole number, pos neg without decimals
+y = 2.8 # float is floating point, can also be e to indicate to the power of 10.
+z = 1j # complex numbers are written with "j" as imaginary part
+# convert from one type to another (not complex)
+x = 1
+y = 2.8
+z = 1j
+#convert from int to float
+a = float(x)
+print(a)
+print(type(a))
+# x has now been converted from int to float i.e 1 to 1.0
+
+# Built in module called "random" can generate random numbers
+import random
+print(random.randrange(1,10))
+
+
+
+
+
+
+
