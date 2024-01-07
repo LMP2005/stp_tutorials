@@ -192,3 +192,43 @@ itemno = 567
 price = 49.95
 myorder = "I want {} pieces of item {} for {} dollars."
 print(myorder.format(quantity, itemno, price))
+
+#BOOLEANS: represent one of two values- TRUE or FALSE
+
+print(10 > 9)
+print(10 == 9)
+
+a = 200
+b = 33
+if b > a:
+    print("b is greater than a")
+else:
+    print("b is not greater than a")
+
+#bool() function allows you to evaluate any value, and give you True or False in return,
+print(bool("hello"))
+print(bool(15))
+
+x = "hello"
+y = 15
+print(bool(x))
+print(bool(y))
+#almost all values are true
+# not many values are false, except empty values [] {} () "", 0 , value NONE, False.
+
+class myclass():
+  def __len__(self):
+    return 0
+myobj = myclass()
+print(bool(myobj))
+
+#create functions that return a Boolean value (i.e. true or false)
+def myfunction() :
+    return True #ensure capital
+#print(myfunction())
+if myfunction() :
+    print("YES!")
+else:
+    print("NO!")
+
+
