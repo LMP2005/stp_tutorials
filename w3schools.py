@@ -231,4 +231,118 @@ if myfunction() :
 else:
     print("NO!")
 
+#OPERATORS
+print(100+5*3)
+#LISTS: used to store muliple items in single variable. Ordered and changable [].
+thislist = ["apple", "banana", "cherry"]
+print(thislist)
+
+list1 = ["1, 3, 7, 9"]
+list2 = [True, False]
+
+#TUPLES: used to store multiple items in single variable. Ordered and unchangable ().
+thistuple = ("apple", "banana", "cherry")
+print(thistuple)
+
+#sets: Used to store multiple items in single variable. Unordered, unchangeable, unindexed {}.
+#once set created cannot change items, but can delete or add new.
+thisset = {"apple", "banana", "cherry"}
+print(thisset)
+
+thisset = {"apple", "banana", "cherry"}
+for x in thisset:
+    print(x)
+
+#DICTIONARIES: store data values in key:value pairs. Ordered changeable and no dups.
+thisdict = {
+    "brand": "Ford",
+    "Model": "Mustang",
+    "year": 1964
+}
+print(thisdict)
+
+for x in thisdict:
+    print(x) #this prints all key names
+for x in thisdict:
+    print(thisdict[x]) #this prints all values
+
+#if...else
+a = 33
+b = 200
+if b > a:
+    print("b is greater than a")
+
+#elif
+a = 33
+b = 33
+if b > a:
+    print("b is greater than a")
+elif a==b:
+    print("a and b are equal")
+
+
+#else
+a = 200
+b = 33
+if b > a:
+    print("b is greater than a")
+elif a==b:
+    print("a and b are equal")
+else:
+    print("a is greater than b")
+
+
+#WHILE LOOP: can execute set of statements as long as one is true
+i = 1
+while i < 6:
+    print(i)
+    i += 1
+
+i = 1
+while i < 6:
+    print(i)
+    if i == 3:
+        break
+    i += 1
+
+i = 0
+while i < 6:
+    i += 1
+    if i == 3:
+        continue
+    print(i)
+
+i = 1
+while i < 6:
+    print(i)
+    i += 1
+else:
+    print("i is no longer less than 6")
+
+#for loops
+fruits = ["apple", "banana", "cherry"]
+for x in fruits:
+    print(x)
+    if x == "banana":
+        break
+
+#exit loop when x is banana, break is before print
+fruits = ["apple", "banana", "cherry"]
+for x in fruits:
+    if x == "banana":
+        break
+    print(x)
+
+#loop through set of code a specified number of times using range(). starts at 0 increments of 1.
+for x in range(6):
+    print(x)
+
+for x in range(2, 30, 3):#this increments the sequence by 3 (default is 1).
+    print(x)
+
+for x in range(6):
+    print(x)
+else:
+    print("finally finished")
+
 
